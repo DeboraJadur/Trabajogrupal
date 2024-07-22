@@ -1,0 +1,79 @@
+/* Reset de márgenes y rellenos para todos los elementos */
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(114, 147, 171)
+}
+
+#contenedor {
+    margin: auto; /* Centrar horizontalmente */
+    max-width: 80%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática */
+    
+}
+
+/* Estilos para la cabecera */
+#cabecera {
+    margin-bottom: -10px; /* Margen inferior negativo para eliminar espacio adicional */
+}
+
+.container-fluid {
+    margin-bottom: -4px; /* Margen inferior negativo para eliminar espacio adicional */
+}
+
+
+/* Estilo para las imágenes del carrusel */
+.carousel-item img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-height: 500px; /* Ajusta el valor según la altura deseada */
+    object-fit: contain; /* Asegura que la imagen no se recorte */
+}
+
+
+#tarjeta{
+    margin-top: 50px; /* Ajusta según sea necesario */
+    
+}
+#tarjeta .row {
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+.card {
+    width: 100%; /* Hace que la tarjeta ocupe el ancho completo del contenedor */
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+}
+#carouselSection {
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+
+/* Centrar el formulario en la página */
+/* Estilos para el contenedor del formulario */
+
+
+.form-container {
+    background-color: #585252; /* Color de fondo del formulario */
+    box-shadow: 0 0 10px rgba(86, 54, 182, 0.5);
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 400px; /* Ancho máximo del formulario */
+    padding: 2rem; /* Agregar relleno */
+    border-radius: 5px;
+    text-align: center;
+    color: #0d0d0d; /* Asegúrate de que el texto sea legible en el fondo oscuro */
+}
+/* Media queries para pantallas medianas y pequeñas */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem; /* Reducir el padding en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 20px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+}
